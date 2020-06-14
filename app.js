@@ -51,7 +51,7 @@ app.post("/", function(req, res){
     })
   })
 
-  // request.write(jsonData);
+  request.write(jsonData);
   request.end();
 });
 
@@ -62,12 +62,3 @@ app.post("/failure", function(req, res){
 app.listen(process.env.PORT || 3000, function(){
   console.log("Hello");
 });
-
-
-
-
-
-
-// API Key: 40d6b2c01eb7c1c3afc1a2cee0dd7d8e-us10
-
-// List ID: 0dcf714a99
